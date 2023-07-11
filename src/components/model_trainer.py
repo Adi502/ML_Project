@@ -15,10 +15,12 @@ from src.logger import logging
 
 from src.utils import save_object, evaluate_models
 
+# class is defined as a data class, which means it is a class primarily used to store data.
 @dataclass
 class ModelTrainerConfig:
     trained_model_file_path=os.path.join("artifacts","model.pkl")
 
+# The `ModelTrainer` class initializes an instance of the `ModelTrainerConfig` class.
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config=ModelTrainerConfig()
@@ -27,7 +29,7 @@ class ModelTrainer:
     def initiate_model_trainer(self,train_array,test_array):
         try:
             logging.info("Split training and test input data")
-            X_train,y_train,X_test,y_test=(
+            X_train,y_train,X_test,y_test=(     # is splitting the input data into training and testing sets.
                 train_array[:,:-1],
                 train_array[:,-1],
                 test_array[:,:-1],
@@ -73,6 +75,7 @@ class ModelTrainer:
                 
             }
 
+            # calling the `evaluate_models` function with the specified parameters and assigning the returned value to the variable `model_report`.
             model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,models=models,param=params)
             
             ## To get best model score from dict

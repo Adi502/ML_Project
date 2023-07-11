@@ -9,6 +9,7 @@ class PredictPipeline:
         pass
 
     def predict(self,features):
+        # This method is used to make predictions on a set of input features.
         try:
             model_path = 'artifacts\model.pkl'
             preprocessor_path = 'artifacts\preprocessor.pkl'
@@ -21,7 +22,7 @@ class PredictPipeline:
         except Exception as e:
             raise CustomException(e,sys)
 
-class CustomData:
+class CustomData:   #represents custom data with attributes such as gender, race/ethnicity, parental level of education, lunch type, test preparation course, reading score, and writing score.
     def __init__(self,
         gender: str,
         race_ethnicity: str,
@@ -39,6 +40,10 @@ class CustomData:
         self.writing_score = writing_score
 
     def get_data_as_data_frame(self):
+        # The block of code is creating a dictionary called `custom_data_input_dict` that
+        # represents the custom data attributes. Each attribute is a key-value pair in the dictionary,
+        # where the key is the attribute name (e.g., "gender", "race_ethnicity") and the value is a
+        # list containing the corresponding attribute value.
         try:
             custom_data_input_dict = {
                 "gender" : [self.gender],

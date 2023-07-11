@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-application = Flask(__name__)
+application = Flask(__name__)   #This is a Flask application that creates routes for a homepage and a prediction endpoint, where users can input data and get predictions.
 
 app = application
 
@@ -12,9 +12,9 @@ app = application
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html')    #return: In the code provided, the `index()` function returns the rendered template 'index.html' when the route '/' is accessed.
 
-@app.route('/predictdata', methods=['GET','POST'])
+@app.route('/predictdata', methods=['GET','POST'])  #The `predict_datapoint()` function returns the rendered template 'home.html' when the route '/predictdata' is accessed with the GET method. When the route '/predictdata' is accessed with the POST method, it creates a `CustomData` object with the form
 def predict_datapoint():
     if request.method=='GET':
         return render_template('home.html')
