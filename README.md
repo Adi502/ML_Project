@@ -1,20 +1,16 @@
 # **Student Performance Prediction App with Flask and Machine Learning**
 
-ML Data Analyzer is a project that focuses on analyzing and processing machine learning data. It provides a comprehensive set of tools and functionalities to facilitate data analysis, exploration, and preprocessing tasks in the context of machine learning projects.
+A project that focuses on analyzing and processing machine learning data. It provides a comprehensive set of tools and functionalities to facilitate data analysis, exploration, and preprocessing tasks in the context of machine learning projects.
 
 ### **Features**
 
-* **Data loading and preprocessing**: Load data from various sources, perform data cleaning, handle missing values, and preprocess the data for further analysis.
+* **Real-time Prediction**: Get real-time predictions on student performance based on input data.
+  
+* **Flask Web Application**: Access predictions through a user-friendly web interface powered by Flask.
 
-* **Data visualization**: Generate insightful visualizations such as scatter plots, histograms, and correlation matrices to gain a deeper understanding of the data.
-
-* **Statistical analysis**: Calculate descriptive statistics, explore data distributions, and identify patterns and trends within the dataset.
-
-* **Feature engineering**: Create new features, transform existing features, and extract relevant information to enhance the quality and predictive power of the data.
-
-* **Data splitting and validation**: Split data into training and testing sets, perform cross-validation, and evaluate model performance using various metrics.
-
-* **Integration with popular libraries**: Seamlessly integrate with popular Python libraries such as Pandas, NumPy, and scikit-learn for efficient data manipulation and machine learning tasks.
+* **Machine Learning Pipeline**: Benefit from a comprehensive machine learning pipeline encompassing model ingestion, data transformation, and model training for accurate predictions.
+  
+* **Predictive Model**: Utilize a custom-trained machine learning model specifically designed for predicting student grades..
 
 ### **Getting Started**
 
