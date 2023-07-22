@@ -1,4 +1,4 @@
-# **ML Data Analyzer**
+# **Student Performance Prediction App with Flask and Machine Learning**
 
 ML Data Analyzer is a project that focuses on analyzing and processing machine learning data. It provides a comprehensive set of tools and functionalities to facilitate data analysis, exploration, and preprocessing tasks in the context of machine learning projects.
 
